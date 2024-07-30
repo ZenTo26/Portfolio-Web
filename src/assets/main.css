@@ -1,0 +1,22 @@
+@import "./base.css";
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(to bottom right, #141e30, #243b55);
+  min-height: 100vh;
+  font-family: "Kanit", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+}
