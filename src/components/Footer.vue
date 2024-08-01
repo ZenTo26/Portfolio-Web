@@ -1,13 +1,25 @@
 <template>
   <footer class="footer">
     <div class="footer-text">
-      <p>Chantha Rathana ©<i>2024</i></p>
+      <p>
+        Chantha Rathana ©<i>2024</i> | <span>{{ phoneNumber }}</span>
+      </p>
     </div>
     <div class="footer-iconTop">
       <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      phoneNumber: "067403565",
+    };
+  },
+};
+</script>
 
 <style>
 .footer {
