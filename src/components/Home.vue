@@ -8,15 +8,18 @@
       </h3>
 
       <div class="social-media">
-        <a :href="facebookLink" target="_blank"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a :href="instagramLink" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a :href="xLink" target="_blank"
-          ><i class="fa-brands fa-x-twitter"></i
-        ></a>
+        <a :href="facebookLink" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a :href="instagramLink" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a :href="xLink" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a :href="telegramLink" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
       </div>
       <a href="#" class="btn" @click.prevent="downloadCV">Download CV</a>
     </div>
@@ -40,6 +43,7 @@ export default {
       facebookLink: "https://www.facebook.com/tox15",
       instagramLink: "https://www.instagram.com/im_not_tox/",
       xLink: "https://x.com/rathana002",
+      telegramLink: 'https://t.me/rathana_chantha',
     };
   },
   mounted() {
