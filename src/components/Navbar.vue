@@ -5,7 +5,7 @@
     <div class="menu">
       <a href="#home" class="active">HOME</a>
       <a href="#about">About</a>
-      <a href="#portfolio">Project</a>
+      <a href="#project">Project</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
