@@ -142,4 +142,71 @@ export default {
 .btn-contact:hover {
   box-shadow: none;
 }
+
+/* responsive */
+
+/*mobile phone*/
+@media (max-width: 557px) {
+
+.heading-contact {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.4rem;
+}
+.contact h2 {
+  margin-bottom: 3rem;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: var(--main-color);
+  background: #212121;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+.contact form .input-box input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+  height: 200px;
+}
+.btn-contact {
+  display: inline-block;
+  padding: 10px 16px;
+  color: var(--main-color);
+  background: blue;
+  border-radius: 35px;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  box-shadow: 0px 0px 5px 2px var(--box-shadow);
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-contact:hover {
+  box-shadow: none;
+}
+
+}
+/*ipad*/
+@media (min-width: 558px) and (max-width: 991px) {
+
+}
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
 </style>

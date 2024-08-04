@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <navbar-navbar></navbar-navbar>
-  </header>
+  <navbar-navbar></navbar-navbar>
   <home-home></home-home>
   <about-about></about-about>
   <project-project></project-project>
@@ -13,4 +11,3 @@
 export default {};
 </script>
 
-<style></style>
