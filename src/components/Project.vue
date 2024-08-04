@@ -231,7 +231,7 @@ export default {
 }
 .main-card-res{
   max-width: 90%;
-  height: 40rem;
+  height:35rem;
   margin-top: 20px;
   margin-left: 5%;
 
@@ -296,7 +296,7 @@ export default {
 }
 .main-card-res{
   max-width: 90%;
-  height: 30rem;
+  height: 35rem;
   margin-top: 20px;
   margin-left: 5%;
 
@@ -320,7 +320,7 @@ export default {
 }
 .main-card-res .card-img {
   width: 100%;
-  height: 35%;
+  height: 45%;
   background: blue;
   border-radius: 0.8rem 0.8rem 0 0;
   overflow: hidden;
@@ -332,7 +332,7 @@ export default {
 .main-card-res .card p {
   margin-top: 20px;
   color: #ffffff8b;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .btn-project {

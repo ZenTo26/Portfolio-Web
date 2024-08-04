@@ -152,7 +152,7 @@ export default {};
 }
 
 .menu {
-  display: none;
+  display: block;
   margin-right: 0px;
   font-size: 20px;
   font-family: "Dosis", sans-serif;
@@ -160,7 +160,7 @@ export default {};
   font-style: normal;
 }
 .menu-icon{
-  display: block;
+  display: none;
   color: #fff;
 }
 

@@ -335,20 +335,20 @@ section {
 }
 
 h3 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 700;
 }
 h3:nth-of-type(2) {
-  font-size: 50px;
+  font-size: 40px;
 }
 span {
   color: blue;
 }
 .home-content h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 .home-image img {
-  display: none;
+  display: block;
 }
 .social-media a {
   display: inline-flex;
