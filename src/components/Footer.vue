@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-text">
       <p>
-        Chantha Rathana ©<i>2024</i> | <span>{{ phoneNumber }}</span>
+        {{ name }} ©<i>2024</i> | <span>{{ phoneNumber }}</span>
       </p>
     </div>
     <div class="footer-iconTop">
@@ -16,6 +16,7 @@ export default {
   data() {
     return {
       phoneNumber: "067403565",
+      name: "Chantha Rathana",
     };
   },
 };
