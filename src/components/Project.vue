@@ -179,6 +179,10 @@ export default {
   .main-card {
     display: none;
   }
+
+  .main-card-res {
+    display: block;
+  }
   .main-card-res {
     max-width: 90%;
     height: 30rem;
@@ -230,7 +234,7 @@ export default {
     cursor: pointer;
     position: absolute;
     bottom: 2rem;
-    left: 4rem;
+    left: 6rem;
   }
   .btn-project:hover {
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
@@ -242,6 +246,9 @@ export default {
     display: none;
   }
   .main-card-res {
+    display: block;
+  }
+  .main-card-res {
     max-width: 90%;
     height: 35rem;
     margin-top: 20px;
@@ -293,7 +300,7 @@ export default {
     cursor: pointer;
     position: absolute;
     bottom: 2rem;
-    left: 4rem;
+    right: 4rem;
   }
   .btn-project:hover {
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
@@ -303,6 +310,9 @@ export default {
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-card {
     display: none;
+  }
+  .main-card-res {
+    display: block;
   }
   .main-card-res {
     max-width: 90%;
@@ -356,7 +366,7 @@ export default {
     cursor: pointer;
     position: absolute;
     bottom: 2rem;
-    left: 4rem;
+    right: 4rem;
   }
   .btn-project:hover {
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
