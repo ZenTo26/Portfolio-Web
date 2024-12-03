@@ -126,7 +126,7 @@ span {
   font-size: 70px;
 }
 .home-image {
-  width: 500px;
+  width: 30vw;
   height: 500px;
   margin-left: 60px;
   border-radius: 24px;
@@ -214,7 +214,7 @@ span {
   .home-content h1 {
     font-size: 60px;
   }
-  .home-image img {
+  .home-image {
     display: none;
   }
   .social-media a {
@@ -285,7 +285,7 @@ span {
   .home-content h1 {
     font-size: 80px;
   }
-  .home-image img {
+  .home-image {
     display: none;
   }
   .social-media a {
@@ -357,8 +357,9 @@ span {
   .home-content h1 {
     font-size: 60px;
   }
-  .home-image img {
+  .home-image {
     display: block;
+    height: 320px;
   }
   .social-media a {
     display: inline-flex;

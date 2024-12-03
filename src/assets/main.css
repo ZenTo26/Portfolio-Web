@@ -8,7 +8,8 @@ a {
   text-decoration: none;
 }
 body {
-  background: linear-gradient(to bottom right, #141e30, #243b55);
+  /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+  background-color: #000;
   min-height: 100vh;
   font-family: "Kanit", sans-serif;
 }

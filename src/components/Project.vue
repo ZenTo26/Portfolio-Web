@@ -8,40 +8,33 @@
           <img src="@/assets/cc-computer.png" alt="" />
         </div>
         <p>
-          This website I build for me final project in basic of frontend class.
-          I copy template from CC Computer. In this project I have use HTML,
-          CSS, Bootstrap, JavaScript and jQuery and responsive on mobile phone,
-          ipad, ipad pro and laptop.
+          This website I build for me final project in basic of frontend class. I copy
+          template from CC Computer. In this project I have use HTML, CSS, Bootstrap,
+          JavaScript and jQuery and responsive on mobile phone, ipad, ipad pro and laptop.
         </p>
-        <a :href="ccCompuer" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="ccCompuer" target="_blank" class="btn-project"> View Web Page </a>
       </div>
       <div class="card">
         <div class="card-img">
           <img src="@/assets/angkor-store.png" alt="" />
         </div>
         <p>
-          This website I just build for fun and I get requirement from my
-          friend. In this project I have use only HTML and CSS and responsive on
-          mobilr phone, ipad and laptop.
+          This website I just build for fun and I get requirement from my friend. In this
+          project I have use only HTML and CSS and responsive on mobilr phone, ipad and
+          laptop.
         </p>
-        <a :href="angkorStore" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="angkorStore" target="_blank" class="btn-project"> View Web Page </a>
       </div>
       <div class="card">
         <div class="card-img">
           <img src="@/assets/business-cam.png" alt="" />
         </div>
         <p>
-          This website I was build while I while in basic Fronted Class. In this
-          project I have use HTML, CSS and Bootstrap and responsive on mobile
-          phone, ipad, ipad pro and laptop.
+          This website I was build while I while in basic Fronted Class. In this project I
+          have use HTML, CSS and Bootstrap and responsive on mobile phone, ipad, ipad pro
+          and laptop.
         </p>
-        <a :href="businessCam" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="businessCam" target="_blank" class="btn-project"> View Web Page </a>
       </div>
     </div>
 
@@ -52,14 +45,11 @@
           <img src="@/assets/cc-computer.png" alt="" />
         </div>
         <p>
-          This website I build for me final project in basic of frontend class.
-          I copy template from CC Computer. In this project I have use HTML,
-          CSS, Bootstrap, JavaScript and jQuery and responsive on mobile phone,
-          ipad, ipad pro and laptop.
+          This website I build for me final project in basic of frontend class. I copy
+          template from CC Computer. In this project I have use HTML, CSS, Bootstrap,
+          JavaScript and jQuery and responsive on mobile phone, ipad, ipad pro and laptop.
         </p>
-        <a :href="ccCompuer" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="ccCompuer" target="_blank" class="btn-project"> View Web Page </a>
       </div>
     </div>
     <div class="main-card-res">
@@ -68,13 +58,11 @@
           <img src="@/assets/angkor-store.png" alt="" />
         </div>
         <p>
-          This website I just build for fun and I get requirement from my
-          friend. In this project I have use only HTML and CSS and responsive on
-          mobilr phone, ipad and laptop.
+          This website I just build for fun and I get requirement from my friend. In this
+          project I have use only HTML and CSS and responsive on mobilr phone, ipad and
+          laptop.
         </p>
-        <a :href="angkorStore" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="angkorStore" target="_blank" class="btn-project"> View Web Page </a>
       </div>
     </div>
 
@@ -84,13 +72,11 @@
           <img src="@/assets/business-cam.png" alt="" />
         </div>
         <p>
-          This website I was build while I while in basic Fronted Class. In this
-          project I have use HTML, CSS and Bootstrap and responsive on mobile
-          phone, ipad, ipad pro and laptop.
+          This website I was build while I while in basic Fronted Class. In this project I
+          have use HTML, CSS and Bootstrap and responsive on mobile phone, ipad, ipad pro
+          and laptop.
         </p>
-        <a :href="businessCam" target="_blank" class="btn-project">
-          View Web Page
-        </a>
+        <a :href="businessCam" target="_blank" class="btn-project"> View Web Page </a>
       </div>
     </div>
   </section>
