@@ -71,7 +71,8 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
-    background: linear-gradient(to bottom right, #141e30, #243b55);
+    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+    background: linear-gradient(to bottom right, #000, #141e30);
     position: fixed;
     top: 0;
     left: 0;
@@ -102,7 +103,8 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
-    background: linear-gradient(to bottom right, #141e30, #243b55);
+    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+    background: linear-gradient(to bottom right, #000, #141e30);
     position: fixed;
     top: 0;
     left: 0;
@@ -133,7 +135,8 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
-    background: linear-gradient(to bottom right, #141e30, #243b55);
+    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
+    background: linear-gradient(to bottom right, #000, #141e30);
     position: fixed;
     top: 0;
     left: 0;
