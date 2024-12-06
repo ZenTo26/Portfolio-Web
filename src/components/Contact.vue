@@ -4,33 +4,13 @@
 
     <form ref="form" @submit.prevent="sendMail">
       <div class="input-box">
-        <input
-          v-model="fullName"
-          type="text"
-          placeholder="Full Name"
-          required
-        />
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Email Address"
-          required
-        />
+        <input v-model="fullName" type="text" placeholder="Full Name" required />
+        <input v-model="email" type="email" placeholder="Email Address" required />
       </div>
 
       <div class="input-box">
-        <input
-          v-model="mobileNumber"
-          type="tel"
-          placeholder="Mobile Number"
-          required
-        />
-        <input
-          v-model="subject"
-          type="text"
-          placeholder="Email Subject"
-          required
-        />
+        <input v-model="mobileNumber" type="tel" placeholder="Mobile Number" required />
+        <input v-model="subject" type="text" placeholder="Email Subject" required />
       </div>
 
       <textarea
@@ -71,12 +51,7 @@ export default {
       };
 
       emailjs
-        .send(
-          "service_kdca2t5",
-          "template_x1x5j97",
-          templateParams,
-          "zN9dRXwU9M2ZVk65i",
-        )
+        .send("service_kdca2t5", "template_x1x5j97", templateParams, "zN9dRXwU9M2ZVk65i")
         .then(
           () => {
             console.log("SUCCESS!");
@@ -91,8 +66,6 @@ export default {
   },
 };
 </script>
-
-
 
 <style>
 .heading-contact {
@@ -135,23 +108,26 @@ export default {
   display: inline-block;
   padding: 10px 16px;
   color: var(--main-color);
-  background: blue;
+  background: var(--base-color);
   border-radius: 35px;
   font-size: 20px;
   letter-spacing: 0.1rem;
   box-shadow: 0px 0px 5px 2px var(--box-shadow);
   font-weight: 600;
   cursor: pointer;
+  transition: 2s;
 }
 .btn-contact:hover {
+  transition: 2s;
   box-shadow: none;
+  border: 3px solid var(--thirt-color);
+  color: var(--thirt-color);
 }
 
 /* responsive */
 
 /*mobile phone*/
 @media (max-width: 557px) {
-
   .heading-contact {
     text-align: center;
     color: var(--main-color);
@@ -192,7 +168,7 @@ export default {
     display: inline-block;
     padding: 10px 16px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
@@ -203,5 +179,7 @@ export default {
 
   .btn-contact:hover {
     box-shadow: none;
-  }}
+  }
+}
 </style>
+v

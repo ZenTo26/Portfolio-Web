@@ -23,9 +23,9 @@ export default {};
 .navbar {
   width: 100%;
   /* height: 80px; */
-  box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
+  box-shadow: 0px 10px 10px -9px var(--main-color);
   /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-  background: linear-gradient(to bottom right, #000, #141e30);
+  background: linear-gradient(to bottom, #6430e7, #838383b0);
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +61,7 @@ export default {};
 .menu a:hover {
   color: #fff;
   margin-left: 4rem;
-  text-shadow: 0px 1px 13px rgba(23, 0, 255, 0.51);
+  text-shadow: 0px 1px 13px var(--box-shawdow);
   transition: 0.8s;
 }
 
@@ -70,9 +70,9 @@ export default {};
   .navbar {
     width: 100%;
     /* height: 80px; */
-    box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
+    box-shadow: 0px 10px 10px -9px var(--main-color);
     /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom right, #000, #141e30);
+    background: linear-gradient(to bottom, #6430e7, #838383b0);
     position: fixed;
     top: 0;
     left: 0;
@@ -102,9 +102,9 @@ export default {};
   .navbar {
     width: 100%;
     /* height: 80px; */
-    box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
+    box-shadow: 0px 10px 10px -9px var(--main-color);
     /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom right, #000, #141e30);
+    background: linear-gradient(to bottom, #6430e7, #838383b0);
     position: fixed;
     top: 0;
     left: 0;
@@ -134,9 +134,9 @@ export default {};
   .navbar {
     width: 100%;
     /* height: 80px; */
-    box-shadow: 0px 10px 10px -9px rgba(34, 26, 128, 1);
+    box-shadow: 0px 10px 10px -9px var(--main-color);
     /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom right, #000, #141e30);
+    background: linear-gradient(to bottom, #6430e7, #838383b0);
     position: fixed;
     top: 0;
     left: 0;

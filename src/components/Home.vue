@@ -25,7 +25,8 @@
     </div>
 
     <div class="home-image">
-      <img src="@/assets/my-dark.png" alt="" />
+      <!-- <img src="@/assets/my-dark.png" alt="" /> -->
+      <img src="@/assets/Profile-orange.png" alt="" />
     </div>
   </section>
 </template>
@@ -120,24 +121,24 @@ h3:nth-of-type(2) {
   margin-bottom: 30px;
 }
 span {
-  color: blue;
+  color: var(--base-color);
 }
 .home-content h1 {
   font-size: 70px;
 }
 .home-image {
-  width: 30vw;
+  width: 500px;
   height: 500px;
   margin-left: 60px;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0px 0px 21px 0px var(--box-shadow);
-  transition: 1s;
+  transition: 2s;
 }
 .home-image:hover {
-  transition: 1s;
+  transition: 2s;
   box-shadow: none;
-  border: 2px solid var(--box-shadow);
+  border: 4px solid var(--secendary-color);
 }
 .home-image img {
   width: 100%;
@@ -151,15 +152,15 @@ span {
   width: 3rem;
   height: 3rem;
   background: transparent;
-  border: 2px solid blue;
+  border: 2px solid var(--base-color);
   border-radius: 50%;
   font-size: 30px;
-  color: blue;
+  color: var(--base-color);
   margin: 45px 22px 15px 0;
   transition: 0.5s;
 }
 .social-media a:hover {
-  background: blue;
+  background: var(--base-color);
   color: var(--main-color);
   box-shadow: 0px 0px 5px 2px var(--box-shadow);
 }
@@ -168,16 +169,19 @@ span {
   display: inline-block;
   padding: 0.5px 12px;
   color: var(--main-color);
-  background: blue;
+  background: var(--base-color);
   border-radius: 35px;
   font-size: 20px;
   letter-spacing: 0.1rem;
   box-shadow: 0px 0px 5px 2px var(--box-shadow);
   font-weight: 600;
   cursor: pointer;
+  transition: 2s;
 }
 .btn:hover {
+  transition: 2s;
   box-shadow: none;
+  border: 2px solid var(--secendary-color);
 }
 
 /* responsive */
@@ -209,10 +213,10 @@ span {
     font-size: 25px;
   }
   span {
-    color: blue;
+    color: var(--base-color);
   }
   .home-content h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .home-image {
     display: none;
@@ -224,15 +228,15 @@ span {
     width: 3rem;
     height: 3rem;
     background: transparent;
-    border: 2px solid blue;
+    border: 2px solid var(--base-color);
     border-radius: 50%;
     font-size: 30px;
-    color: blue;
+    color: var(--base-color);
     margin: 1px 22px 15px 0;
     transition: 0.5s;
   }
   .social-media a:hover {
-    background: blue;
+    background: var(--base-color);
     color: var(--main-color);
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
   }
@@ -241,7 +245,7 @@ span {
     display: inline-block;
     padding: 0.5px 12px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
@@ -280,7 +284,7 @@ span {
     font-size: 50px;
   }
   span {
-    color: blue;
+    color: var(--base-color);
   }
   .home-content h1 {
     font-size: 80px;
@@ -295,15 +299,15 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 2px solid blue;
+    border: 2px solid var(--base-color);
     border-radius: 50%;
     font-size: 50px;
-    color: blue;
+    color: var(--base-color);
     margin: 1px 22px 15px 0;
     transition: 0.5s;
   }
   .social-media a:hover {
-    background: blue;
+    background: var(--base-color);
     color: var(--main-color);
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
   }
@@ -313,7 +317,7 @@ span {
     padding: 0.5px 12px;
     margin-top: 10px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
@@ -352,7 +356,7 @@ span {
     font-size: 40px;
   }
   span {
-    color: blue;
+    color: var(--base-color);
   }
   .home-content h1 {
     font-size: 60px;
@@ -368,15 +372,15 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 2px solid blue;
+    border: 2px solid var(--base-color);
     border-radius: 50%;
     font-size: 50px;
-    color: blue;
+    color: var(--base-color);
     margin: 1px 22px 15px 0;
     transition: 0.5s;
   }
   .social-media a:hover {
-    background: blue;
+    background: var(--base-color);
     color: var(--main-color);
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
   }
@@ -386,7 +390,7 @@ span {
     padding: 0.5px 12px;
     margin-top: 10px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;

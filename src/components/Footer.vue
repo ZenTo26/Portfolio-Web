@@ -39,7 +39,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
-  background: blue;
+  background: var(--base-color);
   border-radius: 0.8rem;
   transition: 1s;
 }

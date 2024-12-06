@@ -118,16 +118,17 @@ export default {
   padding: 1px;
   text-align: center;
   position: relative;
+  transition: 2.2s;
 }
 .main-card .card:hover {
   box-shadow: none;
-  transition: 1s;
-  border: 2px solid var(--box-shadow);
+  transition: 2.2s;
+  border: 3px solid var(--secendary-color);
 }
 .main-card .card-img {
   width: 100%;
   height: 35%;
-  background: blue;
+  background: var(--base-color);
   border-radius: 0.8rem 0.8rem 0 0;
   overflow: hidden;
 }
@@ -144,7 +145,7 @@ export default {
   display: inline-block;
   padding: 5px 8px;
   color: var(--main-color);
-  background: blue;
+  background: var(--base-color);
   border-radius: 35px;
   font-size: 20px;
   letter-spacing: 0.1rem;
@@ -153,9 +154,12 @@ export default {
   position: absolute;
   bottom: 2rem;
   left: 5rem;
+  transition: 2s;
 }
 .btn-project:hover {
-  box-shadow: 0px 0px 5px 2px var(--box-shadow);
+  transition: 2s;
+  background: var(--secendary-color);
+  box-shadow: 0px 0px 5px 2px var(--thirt-color);
 }
 
 /* responsive */
@@ -195,7 +199,7 @@ export default {
   .main-card-res .card-img {
     width: 100%;
     height: 35%;
-    background: blue;
+    background: bluve;
     border-radius: 0.8rem 0.8rem 0 0;
     overflow: hidden;
   }
@@ -212,7 +216,7 @@ export default {
     display: inline-block;
     padding: 5px 8px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
@@ -260,7 +264,7 @@ export default {
   .main-card-res .card-img {
     width: 100%;
     height: 45%;
-    background: blue;
+    background: var(--base-color);
     border-radius: 0.8rem 0.8rem 0 0;
     overflow: hidden;
   }
@@ -278,7 +282,7 @@ export default {
     display: inline-block;
     padding: 5px 8px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
@@ -326,7 +330,7 @@ export default {
   .main-card-res .card-img {
     width: 100%;
     height: 45%;
-    background: blue;
+    background: var(--base-color);
     border-radius: 0.8rem 0.8rem 0 0;
     overflow: hidden;
   }
@@ -344,7 +348,7 @@ export default {
     display: inline-block;
     padding: 5px 8px;
     color: var(--main-color);
-    background: blue;
+    background: var(--base-color);
     border-radius: 35px;
     font-size: 20px;
     letter-spacing: 0.1rem;
