@@ -5,7 +5,7 @@
     <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
 
     <div class="menu">
-      <a href="#home" class="active">HOME</a>
+      <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#project">Project</a>
       <a href="#contact">Contact</a>
@@ -19,13 +19,13 @@ export default {};
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 .navbar {
   width: 100%;
   /* height: 80px; */
   box-shadow: 0px 10px 10px -9px var(--main-color);
-  /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-  background: linear-gradient(to bottom, #6430e7, #838383b0);
+  background: linear-gradient(to bottom, var(--thirt-color), #838383);
   position: fixed;
   top: 0;
   left: 0;
@@ -47,8 +47,12 @@ export default {};
 }
 .menu {
   margin-right: 150px;
-  font-size: 20px;
-  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  /* font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -59,7 +63,9 @@ export default {};
   font-weight: 400;
 }
 .menu a:hover {
-  color: #fff;
+  color: var(--base-color);
+  font-weight: 500;
+  font-size: 27px;
   margin-left: 4rem;
   text-shadow: 0px 1px 13px var(--box-shawdow);
   transition: 0.8s;

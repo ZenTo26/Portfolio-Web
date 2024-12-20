@@ -98,7 +98,7 @@ export default {
 
 section {
   min-height: 100vh;
-  padding: 7rem 9% 4rem;
+  padding: 4rem 9% 4rem;
   /* max-width: 100%; */
 }
 
@@ -106,7 +106,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--main-color);
+  color: var(--base-color);
 }
 
 .home-content {
@@ -121,7 +121,7 @@ h3:nth-of-type(2) {
   margin-bottom: 30px;
 }
 span {
-  color: var(--base-color);
+  color: var(--thirt-color);
 }
 .home-content h1 {
   font-size: 70px;
@@ -180,8 +180,9 @@ span {
 }
 .btn:hover {
   transition: 2s;
-  box-shadow: none;
-  border: 2px solid var(--secendary-color);
+  box-shadow: 0px 0px 5px 2px var(--secendary-color);
+  background: var(--secendary-color);
+  /* border: 2px solid var(--secendary-color); */
 }
 
 /* responsive */
@@ -333,7 +334,7 @@ span {
 @media (min-width: 992px) and (max-width: 1199px) {
   section {
     min-height: 100vh;
-    padding: 7rem 9% 4rem;
+    padding: 3rem 9% 2rem;
     /* max-width: 100%; */
   }
 
@@ -345,36 +346,37 @@ span {
   }
 
   .home-content {
-    line-height: 70px;
+    line-height: 35px;
   }
 
   h3 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
   }
   h3:nth-of-type(2) {
-    font-size: 40px;
+    font-size: 25px;
   }
   span {
     color: var(--base-color);
   }
   .home-content h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   .home-image {
     display: block;
-    height: 320px;
+    width: 40%;
+    height: 300px;
   }
   .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     background: transparent;
     border: 2px solid var(--base-color);
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 25px;
     color: var(--base-color);
     margin: 1px 22px 15px 0;
     transition: 0.5s;

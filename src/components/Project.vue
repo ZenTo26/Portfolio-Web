@@ -3,43 +3,17 @@
     <h2 class="heading-contact"><span>Our</span> Project</h2>
 
     <div class="main-card">
-      <div class="card">
+      <div v-for="(project, index) in projects" :key="index" class="card">
         <div class="card-img">
-          <img src="@/assets/cc-computer.png" alt="" />
+          <img :src="project.image" alt="" />
         </div>
-        <p>
-          This website I build for me final project in basic of frontend class. I copy
-          template from CC Computer. In this project I have use HTML, CSS, Bootstrap,
-          JavaScript and jQuery and responsive on mobile phone, ipad, ipad pro and laptop.
-        </p>
-        <a :href="ccCompuer" target="_blank" class="btn-project"> View Web Page </a>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="@/assets/angkor-store.png" alt="" />
-        </div>
-        <p>
-          This website I just build for fun and I get requirement from my friend. In this
-          project I have use only HTML and CSS and responsive on mobilr phone, ipad and
-          laptop.
-        </p>
-        <a :href="angkorStore" target="_blank" class="btn-project"> View Web Page </a>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="@/assets/business-cam.png" alt="" />
-        </div>
-        <p>
-          This website I was build while I while in basic Fronted Class. In this project I
-          have use HTML, CSS and Bootstrap and responsive on mobile phone, ipad, ipad pro
-          and laptop.
-        </p>
-        <a :href="businessCam" target="_blank" class="btn-project"> View Web Page </a>
+        <p>{{ project.description }}</p>
+        <a :href="project.link" target="_blank" class="btn-project">View Web Page</a>
       </div>
     </div>
 
     <!-- phone view -->
-    <div class="main-card-res">
+    <!-- <div class="main-card-res">
       <div class="card">
         <div class="card-img">
           <img src="@/assets/cc-computer.png" alt="" />
@@ -78,17 +52,38 @@
         </p>
         <a :href="businessCam" target="_blank" class="btn-project"> View Web Page </a>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
 <script>
+import ccComputer from "@/assets/cc-computer.png";
+import angkorStore from "@/assets/angkor-store.png";
+import yoogicare from "@/assets/yogi-care.png";
+
 export default {
   data() {
     return {
-      ccCompuer: "https://cc-computer.netlify.app/",
-      angkorStore: "https://angkor-store-by-rathana.netlify.app/",
-      businessCam: "https://rathana2business.netlify.app/",
+      projects: [
+        {
+          image: ccComputer,
+          description:
+            "This website I built for my final project in basic frontend class. I copied the template from CC Computer. In this project, I used HTML, CSS, Bootstrap, JavaScript, and jQuery. It's responsive on mobile, iPad, and laptop.",
+          link: "https://cc-computer.netlify.app",
+        },
+        {
+          image: angkorStore,
+          description:
+            "This website I built for fun and I got the requirement from my friend. I used only HTML and CSS, and it's responsive on mobile, iPad, and laptop.",
+          link: "https://angkor-store-by-rathana.netlify.app",
+        },
+        {
+          image: yoogicare,
+          description:
+            "This website I build for my work when I was a staff as a Web Design. I used wordpress with Divi Theme and some plugin as woocommerce",
+          link: "http://yogicare-cambodia.com/",
+        },
+      ],
     };
   },
 };
