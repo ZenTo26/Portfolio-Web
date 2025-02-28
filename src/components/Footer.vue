@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-text">
       <p>
-        {{ name }} ©<i>2024</i> | <span>{{ phoneNumber }}</span>
+        {{ name }} ©<i>2025</i> | <span>{{ phoneNumber }}</span>
       </p>
     </div>
     <div class="footer-iconTop">

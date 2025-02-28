@@ -1,19 +1,19 @@
 <template>
   <section class="about" id="about">
-    <div class="about-image">
-      <img src="@/assets/Profile-green.png" alt="" />
-    </div>
-
     <div class="about-content">
       <h2 class="heading-about">About <span>Me</span></h2>
       <h3>Web Developer</h3>
       <p>
-        Hi! I'm Rathana, a Web Developer based in Cambodia. I have a fourth year student
-        at Royal University of Phnom Penh, and I have been passionate about coding ever
-        since I was high school.
+        Hi! I'm Rathana, a Web Designer based in Cambodia. I have a fourth year
+        student at Royal University of Phnom Penh, and I have been passionate
+        about coding ever since I was high school.
       </p>
 
       <a href="#" class="btn-about">Read More</a>
+    </div>
+
+    <div class="about-image">
+      <img src="@/assets/Profile-orange.png" alt="" />
     </div>
   </section>
 </template>
@@ -38,7 +38,7 @@ export default {};
   width: 35vw;
   margin-left: 60px;
   border-radius: 50%;
-  box-shadow: 0px 0px 21px 0px var(--secendary-shawdow);
+  box-shadow: 0px 0px 21px 0px var(--box-shadow);
   transition: 2s;
 }
 .about-image img:hover {
@@ -62,11 +62,11 @@ export default {};
   display: inline-block;
   padding: 10px 16px;
   color: var(--main-color);
-  background: var(--secendary-color);
+  background: var(--base-color);
   border-radius: 35px;
   font-size: 20px;
   letter-spacing: 0.1rem;
-  box-shadow: 0px 0px 5px 2px var(--secendary-shawdow);
+  box-shadow: 0px 0px 5px 2px var(--box-shadow);
   font-weight: 600;
   cursor: pointer;
   transition: 2s;

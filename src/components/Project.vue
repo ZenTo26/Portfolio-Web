@@ -8,7 +8,9 @@
           <img :src="project.image" alt="" />
         </div>
         <p>{{ project.description }}</p>
-        <a :href="project.link" target="_blank" class="btn-project">View Web Page</a>
+        <a :href="project.link" target="_blank" class="btn-project"
+          >View Web Page</a
+        >
       </div>
     </div>
 
@@ -118,7 +120,7 @@ export default {
 .main-card .card:hover {
   box-shadow: none;
   transition: 2.2s;
-  border: 3px solid var(--secendary-color);
+  border: 3px solid var(--base-color);
 }
 .main-card .card-img {
   width: 100%;
@@ -153,8 +155,8 @@ export default {
 }
 .btn-project:hover {
   transition: 2s;
-  background: var(--secendary-color);
-  box-shadow: 0px 0px 5px 2px var(--thirt-color);
+  background: var(--box-shadow);
+  box-shadow: 0px 0px 5px 2px var(--base-color);
 }
 
 /* responsive */

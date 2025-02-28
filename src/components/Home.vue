@@ -2,10 +2,10 @@
   <section class="home" id="home">
     <div class="home-content">
       <h3>Hello, It's Me</h3>
-      <h1>Chantha Rathana</h1>
-      <h3>
-        And I'm a <span class="running-text">{{ displayTexts }} |</span>
-      </h3>
+      <h1>
+        <span class="running-text">{{ displayTexts }} .</span>
+      </h1>
+      <h3>And I'm a Web Designer</h3>
 
       <div class="social-media">
         <a :href="facebookLink" target="_blank">
@@ -24,10 +24,9 @@
       <a href="#" class="btn" @click.prevent="downloadCV">Download CV</a>
     </div>
 
-    <div class="home-image">
-      <!-- <img src="@/assets/my-dark.png" alt="" /> -->
+    <!-- <div class="home-image">
       <img src="@/assets/Profile-orange.png" alt="" />
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -35,7 +34,7 @@
 export default {
   data() {
     return {
-      mySkills: "Web Developer",
+      mySkills: "Chantha Rathana",
       displayTexts: "",
       index: 0,
       typingSpeed: 200,
@@ -106,11 +105,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--base-color);
+  color: var(--box-shadow);
 }
 
 .home-content {
-  line-height: 70px;
+  line-height: 60px;
+  text-align: center;
 }
 
 h3 {
@@ -121,7 +121,8 @@ h3:nth-of-type(2) {
   margin-bottom: 30px;
 }
 span {
-  color: var(--thirt-color);
+  color: var(--base-color);
+  text-shadow: 0px 0px 4px var(--main-color);
 }
 .home-content h1 {
   font-size: 70px;
@@ -166,7 +167,8 @@ span {
 }
 
 .btn {
-  display: inline-block;
+  display: none;
+  /* display: inline-block; */
   padding: 0.5px 12px;
   color: var(--main-color);
   background: var(--base-color);
