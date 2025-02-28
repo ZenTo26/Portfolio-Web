@@ -24,8 +24,8 @@ export default {};
 .navbar {
   width: 100%;
   /* height: 80px; */
-  box-shadow: 0px 10px 10px -9px var(--main-color);
-  background: linear-gradient(to bottom, var(--thirt-color), #838383);
+  box-shadow: 0px 10px 10px -9px var(--box-shadow);
+  background: linear-gradient(to bottom, var(--base-color), #8427022d);
   position: fixed;
   top: 0;
   left: 0;
@@ -63,11 +63,11 @@ export default {};
   font-weight: 400;
 }
 .menu a:hover {
-  color: var(--base-color);
+  color: var(--box-shadow);
   font-weight: 500;
   font-size: 27px;
   margin-left: 4rem;
-  text-shadow: 0px 1px 13px var(--box-shawdow);
+  text-shadow: 0px 1px 13px var(--text-shadow);
   transition: 0.8s;
 }
 

@@ -1,9 +1,10 @@
 :root {
   --main-color: #ffffffae;
   /* --box-shadow:rgb(100, 100, 247); */
-  --box-shadow: #f3ae93;
-  --base-color: #e76430;
-  --secendary-color: #30E764;
-  --secendary-shawdow:#88f5a7;
-  --thirt-color:#6430E7;
+  --box-shadow: #e94200;
+  --text-shadow: #ff7139;
+  --base-color: #842702;
+  --secendary-color: #30e764;
+  --secendary-shawdow: #88f5a7;
+  --thirt-color: #6430e7;
 }
