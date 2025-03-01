@@ -77,8 +77,7 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px var(--main-color);
-    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom, #6430e7, #838383b0);
+    background: linear-gradient(to bottom, var(--base-color), #8427022d);
     position: fixed;
     top: 0;
     left: 0;
@@ -109,8 +108,7 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px var(--main-color);
-    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom, #6430e7, #838383b0);
+    background: linear-gradient(to bottom, var(--base-color), #8427022d);
     position: fixed;
     top: 0;
     left: 0;
@@ -141,8 +139,7 @@ export default {};
     width: 100%;
     /* height: 80px; */
     box-shadow: 0px 10px 10px -9px var(--main-color);
-    /* background: linear-gradient(to bottom right, #141e30, #243b55); */
-    background: linear-gradient(to bottom, #6430e7, #838383b0);
+    background: linear-gradient(to bottom, var(--base-color), #8427022d);
     position: fixed;
     top: 0;
     left: 0;
