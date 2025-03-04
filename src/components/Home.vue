@@ -78,16 +78,27 @@ export default {
     },
     // downloadCV
 
-    downloadCV() {
-      const cvFilePath = "../src/assets/_Resume.pdf";
+    // downloadCV() {
+    //   const cvFilePath = "../src/assets/_Resume.pdf";
 
-      const link = document.createElement("a");
-      link.href = cvFilePath;
-      link.download = "chantha_rathana.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    },
+    //   const link = document.createElement("a");
+    //   link.href = cvFilePath;
+    //   link.download = "chantha_rathana.pdf";
+    //   document.body.appendChild(link);
+    //   link.click();
+    //   document.body.removeChild(link);
+    // },
+
+  downloadCV() {
+  const cvFilePath = "/_Resume.pdf"; 
+  const link = document.createElement("a");
+  link.href = cvFilePath;
+  link.download = "chantha_rathana.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
   },
 };
 </script>
