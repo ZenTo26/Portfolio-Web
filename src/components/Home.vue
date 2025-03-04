@@ -5,7 +5,7 @@
       <h1>
         <span class="running-text">{{ displayTexts }} .</span>
       </h1>
-      <h3>And I'm a Web Designer</h3>
+      <h3>And I'm a FrontEnd Developer</h3>
 
       <div class="social-media">
         <a :href="facebookLink" target="_blank">
@@ -166,8 +166,8 @@ span {
 }
 
 .btn {
-  display: none;
-  /* display: inline-block; */
+  /* display: none; */
+  display: inline-block;
   padding: 0.5px 12px;
   color: var(--main-color);
   background: var(--base-color);

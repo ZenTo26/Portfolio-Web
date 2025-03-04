@@ -2,7 +2,7 @@
   <section class="about" id="about">
     <div class="about-content">
       <h2 class="heading-about">About <span>Me</span></h2>
-      <h3>Web Developer</h3>
+      <h3>FrontEnd Developer</h3>
       <p>
         Hi! I'm Rathana, a Web Designer based in Cambodia. I have a fourth year
         student at Royal University of Phnom Penh, and I have been passionate
@@ -13,7 +13,7 @@
     </div>
 
     <div class="about-image">
-      <img src="@/assets/Profile-orange.png" alt="" />
+      <img src="@/assets/my-retro.png" alt="" />
     </div>
   </section>
 </template>
@@ -40,6 +40,7 @@ export default {};
   border-radius: 50%;
   box-shadow: 0px 0px 21px 0px var(--box-shadow);
   transition: 2s;
+  /* display: none; */
 }
 .about-image img:hover {
   box-shadow: none;
