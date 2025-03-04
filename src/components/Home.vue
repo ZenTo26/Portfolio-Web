@@ -98,7 +98,6 @@ export default {
 section {
   min-height: 100vh;
   padding: 4rem 9% 4rem;
-  /* max-width: 100%; */
 }
 
 .home {
@@ -182,8 +181,10 @@ span {
 }
 .btn:hover {
   transition: 2s;
-  box-shadow: 0px 0px 5px 2px var(--secendary-color);
-  background: var(--secendary-color);
+  box-shadow: 0px 0px 5px 2px var(--main-color);
+  background: #212121;
+  color: var(--base-color);
+  text-shadow: 0px 1px 13px var(--box-shadow);
   /* border: 2px solid var(--secendary-color); */
 }
 
@@ -193,7 +194,7 @@ span {
 @media (max-width: 557px) {
   section {
     min-height: 100vh;
-    padding: 7rem 9% 4rem;
+    padding: 3rem 9% 4rem;
     /* max-width: 100%; */
   }
 
@@ -219,7 +220,7 @@ span {
     color: var(--base-color);
   }
   .home-content h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .home-image {
     display: none;
@@ -228,14 +229,14 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background: transparent;
     border: 2px solid var(--base-color);
     border-radius: 50%;
     font-size: 30px;
     color: var(--base-color);
-    margin: 1px 22px 15px 0;
+    margin: 1px 15px 15px 0;
     transition: 0.5s;
   }
   .social-media a:hover {
@@ -246,14 +247,14 @@ span {
 
   .btn {
     display: inline-block;
-    padding: 0.5px 12px;
+    padding: 0.5px 7px;
     color: var(--main-color);
     background: var(--base-color);
     border-radius: 35px;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 0.1rem;
     box-shadow: 0px 0px 5px 2px var(--box-shadow);
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
   }
   .btn:hover {

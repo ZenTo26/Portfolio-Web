@@ -8,7 +8,7 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#project">Project</a>
-      <a href="#contact">Contact</a>
+      <!-- <a href="#contact">Contact</a> -->
     </div>
   </div>
 </template>
@@ -75,7 +75,6 @@ export default {};
 @media (max-width: 557px) {
   .navbar {
     width: 100%;
-    /* height: 80px; */
     box-shadow: 0px 10px 10px -9px var(--main-color);
     background: linear-gradient(to bottom, var(--base-color), #8427022d);
     position: fixed;
