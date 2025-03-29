@@ -18,6 +18,7 @@
 import ccComputer from "@/assets/cc-computer.png";
 import angkorStore from "@/assets/angkor-store.png";
 import yoogicare from "@/assets/yogi-care.png";
+import ycnature from "@/assets/yc-nature.png";
 
 export default {
   data() {
@@ -40,6 +41,12 @@ export default {
           description:
             "This website I build for my work when I was a staff as a Web Design. I used wordpress with Divi Theme and some plugin as woocommerce",
           link: "http://yogicare-cambodia.com/",
+        },
+        {
+          image: ycnature,
+          description:
+            "This website I build for my work when I was a staff as a Web Design. I used wordpress with Divi Theme and some plugin",
+          link: "https://ycnature.com/",
         },
       ],
     };
