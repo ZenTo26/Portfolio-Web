@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <a href="#" class="logo">+▢X</a>
+    <a href="#home" class="logo">T.O</a>
 
     <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
 
@@ -41,6 +41,8 @@ export default {};
   color: #fff;
   font-weight: 600;
   margin-left: 20px;
+  cursor: pointer;
+  margin-left: 80px;
 }
 .menu-icon {
   display: none;
