@@ -8,7 +8,7 @@
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#project">Project</a>
-      <!-- <a href="#contact">Contact</a> -->
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </template>

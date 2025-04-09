@@ -84,8 +84,6 @@ export default {
 }
 .contact form .input-box {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .contact form .input-box input,
 .contact form textarea {
@@ -109,10 +107,11 @@ export default {
   padding: 10px 16px;
   color: var(--main-color);
   background: var(--base-color);
+  border: none;
   border-radius: 35px;
   font-size: 20px;
   letter-spacing: 0.1rem;
-  box-shadow: 0px 0px 5px 2px var(--box-shadow);
+  box-shadow: 0px 0px 5px 2px var(--main-color);
   font-weight: 600;
   cursor: pointer;
   transition: 2s;
@@ -120,8 +119,10 @@ export default {
 .btn-contact:hover {
   transition: 2s;
   box-shadow: none;
-  border: 3px solid var(--thirt-color);
-  color: var(--thirt-color);
+  background-color: #212121;
+  color: var(--box-shadow);
+  box-shadow: 0px 0px 5px 2px var(--box-shadow);
+
 }
 
 /* responsive */
