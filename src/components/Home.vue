@@ -41,7 +41,7 @@ export default {
       deleting: false,
 
       facebookLink: "https://www.facebook.com/tox15",
-      instagramLink: "https://www.instagram.com/tox__126/",
+      instagramLink: "https://www.instagram.com/tox.126/",
       xLink: "https://x.com/rathana002",
       telegramLink: "https://t.me/rathana_chantha",
     };
