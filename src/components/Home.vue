@@ -76,28 +76,17 @@ export default {
         this.startTyping();
       }
     },
-    // downloadCV
 
-    // downloadCV() {
-    //   const cvFilePath = "../src/assets/_Resume.pdf";
 
-    //   const link = document.createElement("a");
-    //   link.href = cvFilePath;
-    //   link.download = "chantha_rathana.pdf";
-    //   document.body.appendChild(link);
-    //   link.click();
-    //   document.body.removeChild(link);
-    // },
-
-  downloadCV() {
-  const cvFilePath = "/_Resume.pdf"; 
-  const link = document.createElement("a");
-  link.href = cvFilePath;
-  link.download = "chantha_rathana.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+    downloadCV() {
+      const cvFilePath = "/_Resume.pdf";
+      const link = document.createElement("a");
+      link.href = cvFilePath;
+      link.download = "chantha_rathana.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
 
   },
 };
@@ -127,16 +116,20 @@ h3 {
   font-size: 45px;
   font-weight: 700;
 }
+
 h3:nth-of-type(2) {
   margin-bottom: 30px;
 }
+
 span {
   color: var(--base-color);
   text-shadow: 0px 0px 4px var(--main-color);
 }
+
 .home-content h1 {
   font-size: 70px;
 }
+
 .home-image {
   width: 500px;
   height: 500px;
@@ -146,11 +139,13 @@ span {
   box-shadow: 0px 0px 21px 0px var(--box-shadow);
   transition: 2s;
 }
+
 .home-image:hover {
   transition: 2s;
   box-shadow: none;
   border: 4px solid var(--secendary-color);
 }
+
 .home-image img {
   width: 100%;
   height: 100%;
@@ -170,6 +165,7 @@ span {
   margin: 45px 22px 15px 0;
   transition: 0.5s;
 }
+
 .social-media a:hover {
   background: var(--base-color);
   color: var(--main-color);
@@ -190,6 +186,7 @@ span {
   cursor: pointer;
   transition: 2s;
 }
+
 .btn:hover {
   transition: 2s;
   box-shadow: 0px 0px 5px 2px var(--main-color);
@@ -224,18 +221,23 @@ span {
     font-size: 40px;
     font-weight: 700;
   }
+
   h3:nth-of-type(2) {
     font-size: 25px;
   }
+
   span {
     color: var(--base-color);
   }
+
   .home-content h1 {
     font-size: 30px;
   }
+
   .home-image {
     display: none;
   }
+
   .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -250,6 +252,7 @@ span {
     margin: 1px 15px 15px 0;
     transition: 0.5s;
   }
+
   .social-media a:hover {
     background: var(--base-color);
     color: var(--main-color);
@@ -268,10 +271,12 @@ span {
     font-weight: 400;
     cursor: pointer;
   }
+
   .btn:hover {
     box-shadow: none;
   }
 }
+
 /*ipad*/
 @media (min-width: 558px) and (max-width: 991px) {
   section {
@@ -295,18 +300,23 @@ span {
     font-size: 70px;
     font-weight: 700;
   }
+
   h3:nth-of-type(2) {
     font-size: 50px;
   }
+
   span {
     color: var(--base-color);
   }
+
   .home-content h1 {
     font-size: 80px;
   }
+
   .home-image {
     display: none;
   }
+
   .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -321,6 +331,7 @@ span {
     margin: 1px 22px 15px 0;
     transition: 0.5s;
   }
+
   .social-media a:hover {
     background: var(--base-color);
     color: var(--main-color);
@@ -340,10 +351,12 @@ span {
     font-weight: 600;
     cursor: pointer;
   }
+
   .btn:hover {
     box-shadow: none;
   }
 }
+
 /*ipad pro*/
 @media (min-width: 992px) and (max-width: 1199px) {
   section {
@@ -367,20 +380,25 @@ span {
     font-size: 25px;
     font-weight: 600;
   }
+
   h3:nth-of-type(2) {
     font-size: 25px;
   }
+
   span {
     color: var(--base-color);
   }
+
   .home-content h1 {
     font-size: 40px;
   }
+
   .home-image {
     display: block;
     width: 40%;
     height: 300px;
   }
+
   .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -395,6 +413,7 @@ span {
     margin: 1px 22px 15px 0;
     transition: 0.5s;
   }
+
   .social-media a:hover {
     background: var(--base-color);
     color: var(--main-color);
@@ -414,6 +433,7 @@ span {
     font-weight: 600;
     cursor: pointer;
   }
+
   .btn:hover {
     box-shadow: none;
   }
