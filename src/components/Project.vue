@@ -2,13 +2,31 @@
   <section class="project" id="project">
     <h2 class="heading-contact"><span>Our</span> Project</h2>
 
-    <div class="main-card">
-      <div v-for="(project, index) in projects" :key="index" class="card">
-        <div class="card-img">
-          <img :src="project.image" alt="" />
+    <div class="slideshow-card">
+      <transition name="fade-slide" mode="out-in">
+        <div class="card" :key="projects[currentIndex].link">
+          <div class="card-img">
+            <img :src="projects[currentIndex].image" alt="Project Image" />
+          </div>
+          <p class="desc">{{ projects[currentIndex].description }}</p>
+          <a :href="projects[currentIndex].link" target="_blank" class="btn-project">
+            View Web Page
+          </a>
         </div>
-        <p>{{ project.description }}</p>
-        <a :href="project.link" target="_blank" class="btn-project">View Web Page</a>
+      </transition>
+
+      <div class="slideshow-controls">
+        <button @click="prevSlide" class="nav-btn">⟵ Prev</button>
+        <div class="dots">
+          <span
+            v-for="(proj, i) in projects"
+            :key="i"
+            class="dot"
+            :class="{ active: i === currentIndex }"
+            @click="currentIndex = i"
+          ></span>
+        </div>
+        <button @click="nextSlide" class="nav-btn">Next ⟶</button>
       </div>
     </div>
   </section>
@@ -23,121 +41,155 @@ import ycnature from "@/assets/yc-nature.png";
 export default {
   data() {
     return {
+      currentIndex: 0,
       projects: [
         {
           image: ccComputer,
-          description:
-            "This website I built for my final project in basic frontend class. I copied the template from CC Computer. In this project, I used HTML, CSS, Bootstrap, JavaScript, and jQuery. It's responsive on mobile, iPad, and laptop.",
+          description: "HTML + CSS + Bootstrap+ JavaScript + JQuery",
           link: "https://cc-computer.netlify.app",
         },
         {
           image: angkorStore,
-          description:
-            "This website I built for fun and I got the requirement from my friend. I used only HTML and CSS, and it's responsive on mobile, iPad, and laptop.",
+          description: "HTML + CSS + JavaScript",
           link: "https://angkor-store-by-rathana.netlify.app",
         },
         {
           image: yoogicare,
-          description:
-            "This website I build for my work when I was a staff as a Web Design. I used wordpress with Divi Theme and some plugin as woocommerce",
+          description: "WordPress + Divi",
           link: "http://yogicare-cambodia.com/",
         },
         {
           image: ycnature,
-          description:
-            "This website I build for my work when I was a staff as a Web Design. I used wordpress with Divi Theme and some plugin",
+          description: "WordPress + Divi",
           link: "https://ycnature.com/",
         },
       ],
     };
   },
+  methods: {
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.projects.length;
+    },
+    prevSlide() {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.projects.length) % this.projects.length;
+    },
+  },
 };
 </script>
 
 <style>
-.main-card {
-  max-width: 70rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1rem auto;
-}
 
-.main-card .card {
-  width: 30%;
-  height: 350px;
-  background: #212121;
-  border-radius: 0.8rem;
-  box-shadow: 0px 0px 5px 2px var(--box-shadow);
+.slideshow-card {
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  padding: 1rem;
   position: relative;
-  transition: 0.5s;
+  background: #2121212f;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px var(--base-color);
 }
 
-.main-card .card:hover {
-  box-shadow: none;
-  border: 3px solid var(--base-color);
+.card {
+  position: relative;
+  background: #2121219c;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 20px rgba(100, 100, 111, 0.2);
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  
 }
 
-.main-card .card-img {
+
+
+.card-img img {
   width: 100%;
   height: auto;
-  background: var(--base-color);
-  border-radius: 0.8rem 0.8rem 0 0;
-  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.main-card .card-img img {
-  width: 100%;
-  height: auto;
-}
-
-.main-card .card p {
-  margin-top: 15px;
-  color: #ffffff8b;
+.desc {
+  margin: 1rem 0;
+  color: orange;
+  text-shadow: 1px 0px 9px #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .btn-project {
   display: inline-block;
-  padding: 5px 10px;
-  color: var(--main-color);
-  background: var(--base-color);
-  border-radius: 35px;
-  font-size: 16px;
-  letter-spacing: 0.1rem;
+  background: linear-gradient(135deg, var(--base-color), #f56f22);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
   font-weight: 600;
-  cursor: pointer;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: 0.5s;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px var(--base-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-project:hover {
-  background: var(--box-shadow);
-  box-shadow: 0px 0px 5px 2px var(--base-color);
+  transform: translateY(-3px);
+  background: #ddd;
+  color: #333;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .main-card {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-card .card {
-    width: 80%;
-    height: 450px;
-  }
+.slideshow-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
 }
 
-@media (max-width: 768px) {
-  .main-card .card {
-    width: 90%;
-    height: 380px;
-  }
+.nav-btn {
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+.nav-btn:hover {
+  background: #ddd;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: var(--base-color);
+}
+
+/* Slide transition animation */
+.fade-slide-enter-active, .fade-slide-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+
 </style>
