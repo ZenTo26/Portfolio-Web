@@ -40,7 +40,7 @@ export default {
       typingSpeed: 200,
       deleting: false,
 
-      facebookLink: "https://www.facebook.com/tox15",
+      facebookLink: "https://www.facebook.com/rathana2003",
       instagramLink: "https://www.instagram.com/tox.126/",
       xLink: "https://x.com/rathana002",
       telegramLink: "https://t.me/rathana_chantha",
